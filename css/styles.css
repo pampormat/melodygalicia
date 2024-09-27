@@ -1,0 +1,120 @@
+@font-face {
+  font-family: GothicA1-Medium;
+  src: url(/fonts/GothicA1-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+.nav-items {
+  display: flex;
+  /* the elements in this container will become flex items and will behave as getting in to the with of the actual element and will sit right next to each other */
+  justify-content: space-between;
+  background-color: #fabc3f;
+  flex-wrap: wrap;
+  /* wrap flex items inside the container or pagkasyahin */
+  align-items: center;
+  padding: 0.5rem;
+}
+
+/* .nav-list li {
+  /* width: max-content; */
+/* max-content - this will display the elements in block but will only occuppy the width of the element
+  min-content - will wrap the element and will choose the longest width then it will take up that space */
+/* flex-grow: 1; */
+/* flex-shrink: 1; */
+/* flex-grow - lets the item grow and occupy blank spaces whiel
+  flex-shrink - adjust the space of the item as the container shrinks */
+/* } */
+
+.ul-left-side {
+  display: flex;
+  margin-left: 3rem;
+  padding: 1em;
+}
+
+.ul-left-side:hover {
+  cursor: pointer;
+  transition: all 0.6s ease 0s;
+  border-radius: 10%;
+  background-color: #fbd382;
+}
+.ul-right-side {
+  display: flex;
+  flex-shrink: 1;
+  gap: 1.2rem;
+  margin-right: 3rem;
+  margin-bottom: 0.5rem;
+  color: #3c3d37;
+  font-family: Montserrat;
+  font-weight: bolder;
+}
+
+/*Menu padding*/
+.ul-right-side li a {
+  padding: 0.5rem;
+}
+
+.ul-right-side li a:hover {
+  cursor: pointer;
+  border-radius: 10%;
+  transition: all 0.6s ease 0s;
+  background-color: #fbd382;
+}
+
+.ul-bottom-right {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: normal;
+  color: #3c3d37;
+}
+
+.ul-bottom-right li a {
+  padding: 0.5rem;
+}
+
+.ul-bottom-right li a:hover {
+  cursor: pointer;
+  border-radius: 10%;
+  transition: all 0.6s ease 0s;
+  background-color: #fbd382;
+}
+
+body {
+  background-color: #dde3e9;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  margin-left: 3em;
+}
+.about-me-container h1 {
+  font-family: Montserrat;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #3c3d37;
+}
+
+.about-me-container h2 {
+  font-family: Montserrat;
+  font-size: 1.1;
+  font-weight: normal;
+  color: #3c3d37;
+}
+
+.profile-picture {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 3%;
+  width: 15em;
+}
+/* flexbox reference:
+https://www.youtube.com/watch?v=u044iM9xsWU
+ */
